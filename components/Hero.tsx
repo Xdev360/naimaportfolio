@@ -1,3 +1,4 @@
+import { ArrowDoodle } from "./Doodles";
 import { StickyLabel } from "./StickyNote";
 
 export default function Hero() {
@@ -8,20 +9,15 @@ export default function Hero() {
     >
       <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
         <div className="animate-fadeUp">
-          <div className="flex items-center gap-1 mb-6">
+          <div className="flex items-center gap-3 mb-6">
             <img
               src="/images/character.png"
               alt=""
               aria-hidden="true"
-              className="w-16 md:w-20 h-auto animate-float"
+              className="w-20 md:w-24 h-auto animate-float"
             />
-            <img
-              src="/images/hero-scissors.png"
-              alt=""
-              aria-hidden="true"
-              className="w-14 md:w-16 h-auto -mt-2"
-            />
-            <StickyLabel rotate={-4}>Naimat</StickyLabel>
+            <ArrowDoodle className="w-9 h-11 -scale-x-100 rotate-[130deg] -mt-3" />
+            <StickyLabel rotate={-4} className="mt-2">Naimat</StickyLabel>
           </div>
 
           <h1 className="font-heading font-extrabold text-[2.6rem] leading-[1.08] sm:text-5xl md:text-[3.4rem] tracking-tight">

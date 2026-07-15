@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 
-export function Butterfly({ className = "w-6 h-6" }: { className?: string }) {
+export function Logo({ className = "w-8 h-7" }: { className?: string }) {
   return (
     <img
-      src="/images/butterfly.png"
+      src="/images/logo.svg"
       alt=""
       aria-hidden="true"
       className={`${className} object-contain`}
@@ -20,7 +20,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-white/85 backdrop-blur-md border-b border-ink/5">
       <div className="max-w-content mx-auto px-6 md:px-10 py-4 md:py-5 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
-          <Butterfly />
+          <Logo />
           <span className="font-heading font-extrabold text-lg tracking-tight">
             Naimat
           </span>

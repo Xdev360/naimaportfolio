@@ -1,4 +1,4 @@
-import { Butterfly } from "./Header";
+import { Logo } from "./Header";
 
 export default function Footer() {
   return (
@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="border-t-2 border-ink pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         <div>
           <div className="flex items-center gap-2">
-            <Butterfly />
+            <Logo />
             <span className="font-heading font-extrabold text-lg">Naimat</span>
           </div>
           <p className="text-sm text-ink/60 mt-2">

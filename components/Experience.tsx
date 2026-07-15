@@ -1,4 +1,4 @@
-import { ScissorsDown } from "./Doodles";
+import { ArrowDoodle } from "./Doodles";
 import { StickyLabel } from "./StickyNote";
 
 const experience = [
@@ -31,7 +31,7 @@ export default function Experience() {
       <div className="grid md:grid-cols-[220px_1fr] gap-8 md:gap-12">
         <div>
           <StickyLabel rotate={-3}>Work Experience</StickyLabel>
-          <ScissorsDown className="w-7 h-9 mt-3 ml-10" />
+          <ArrowDoodle className="w-8 h-10 mt-3 ml-12" />
           <p className="mt-5 text-sm md:text-base text-ink/70 max-w-[180px]">
             Have been designing since my past 3 years
           </p>

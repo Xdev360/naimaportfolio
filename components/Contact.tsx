@@ -1,6 +1,6 @@
 "use client";
 
-import { ScissorsDown } from "./Doodles";
+import { ArrowDoodle } from "./Doodles";
 import { StickyLabel } from "./StickyNote";
 
 const fields = [
@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="grid md:grid-cols-2 gap-12 md:gap-16">
         <div>
           <StickyLabel rotate={-3}>Contact here</StickyLabel>
-          <ScissorsDown className="w-7 h-9 mt-3 ml-14" />
+          <ArrowDoodle className="w-8 h-10 mt-3 ml-14" />
           <p className="mt-6 text-xl md:text-2xl font-heading font-semibold leading-snug">
             Have a project idea?
             <br />

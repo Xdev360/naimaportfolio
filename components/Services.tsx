@@ -1,4 +1,4 @@
-import { ScissorsDown } from "./Doodles";
+import { ArrowDoodle } from "./Doodles";
 import { StickyLabel, TagChip } from "./StickyNote";
 
 const services = [
@@ -8,7 +8,7 @@ const services = [
     off: "20px",
     label: "Pen/Paper",
     labelColor: "#9DDCFF",
-    icon: "/images/icon-pencil.png",
+    icon: "/images/icon-pen.svg",
     title: ["User Research", "Design"],
   },
   {
@@ -17,7 +17,7 @@ const services = [
     off: "0px",
     label: "Figma",
     labelColor: "#FFC9F0",
-    icon: "/images/icon-eye.png",
+    icon: "/images/icon-eye.svg",
     title: ["UI & Product", "Design"],
   },
   {
@@ -26,7 +26,7 @@ const services = [
     off: "14px",
     label: "Framer",
     labelColor: "#FFE68C",
-    icon: "/images/icon-sparkle.png",
+    icon: "/images/icon-star.svg",
     title: ["No-code", "Development"],
   },
 ];
@@ -36,7 +36,7 @@ export default function Services() {
     <section className="max-w-content mx-auto px-6 md:px-10 py-14 md:py-24 overflow-x-clip">
       <div className="mb-10 md:mb-12">
         <StickyLabel rotate={-3}>What i do?</StickyLabel>
-        <ScissorsDown className="w-7 h-9 mt-3 ml-6" />
+        <ArrowDoodle className="w-8 h-10 mt-3 ml-8" />
       </div>
 
       <div className="stagger grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-5 md:px-4">
@@ -56,7 +56,7 @@ export default function Services() {
                 src={s.icon}
                 alt=""
                 aria-hidden="true"
-                className="w-9 h-9 object-contain"
+                className="w-12 h-12 md:w-14 md:h-14 object-contain"
               />
               <TagChip color={s.labelColor} className="absolute -top-3 right-5 rotate-2">
                 {s.label}

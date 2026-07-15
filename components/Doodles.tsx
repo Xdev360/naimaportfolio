@@ -1,8 +1,8 @@
-export function ScissorsDown({ className = "" }: { className?: string }) {
-  // Extracted scissors doodle with dashed trail pointing down
+export function ArrowDoodle({ className = "" }: { className?: string }) {
+  // Hand-drawn curvy arrow from the design assets
   return (
     <img
-      src="/images/scissors-down.png"
+      src="/images/arrow.svg"
       alt=""
       aria-hidden="true"
       className={`${className} object-contain`}
