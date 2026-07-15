@@ -43,7 +43,7 @@ export default function Services() {
         {services.map((s) => (
           <div key={s.label}>
             <div
-              className="tilt-card relative rounded-lg p-6 md:p-7 h-56 sm:h-64 md:h-72 flex flex-col justify-between sticky-note border border-ink/20 max-w-sm mx-auto sm:max-w-none"
+              className="tilt-card on-pastel relative rounded-lg p-6 md:p-7 h-56 sm:h-64 md:h-72 flex flex-col justify-between sticky-note border border-ink/20 dark:border-white/10 max-w-sm mx-auto sm:max-w-none text-ink"
               style={
                 {
                   backgroundColor: s.color,

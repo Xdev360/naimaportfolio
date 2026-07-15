@@ -32,18 +32,18 @@ export default function Experience() {
         <div>
           <StickyLabel rotate={-3}>Work Experience</StickyLabel>
           <ArrowDoodle className="w-8 h-10 mt-3 ml-12" />
-          <p className="mt-5 text-sm md:text-base text-ink/70 max-w-[180px]">
+          <p className="mt-5 text-sm md:text-base text-ink/70 dark:text-zinc-400 max-w-[180px]">
             Have been designing since my past 3 years
           </p>
         </div>
 
         {/* Crossing "grid frame" lines like the design */}
-        <div className="border-t border-b border-ink/70 py-8 md:py-10">
-          <ol className="flex flex-col gap-8 md:gap-10 md:border-l md:border-r border-ink/70 px-1 md:px-10 md:-my-16 md:py-20">
+        <div className="border-t border-b border-ink/70 dark:border-zinc-700 py-8 md:py-10">
+          <ol className="flex flex-col gap-8 md:gap-10 md:border-l md:border-r border-ink/70 dark:border-zinc-700 px-1 md:px-10 md:-my-16 md:py-20">
             {experience.map((e) => (
               <li key={e.number} className="flex items-start gap-5">
                 <span
-                  className="shrink-0 w-11 h-11 rounded-md flex items-center justify-center font-heading font-bold text-lg sticky-note"
+                  className="shrink-0 w-11 h-11 rounded-md flex items-center justify-center font-heading font-bold text-lg sticky-note on-pastel text-ink"
                   style={{ backgroundColor: e.color }}
                 >
                   {e.number}
@@ -52,7 +52,7 @@ export default function Experience() {
                   <p className="text-base md:text-lg leading-snug">
                     {e.role} <span className="font-bold">{e.company}</span>
                   </p>
-                  <p className="text-sm text-ink/60 mt-1">{e.period}</p>
+                  <p className="text-sm text-ink/60 dark:text-zinc-400 mt-1">{e.period}</p>
                 </div>
               </li>
             ))}

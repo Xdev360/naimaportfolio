@@ -11,7 +11,7 @@ export function StickyLabel({
 }) {
   return (
     <span
-      className={`inline-block px-4 py-1.5 rounded-md font-hand text-xl md:text-2xl sticky-note ${className}`}
+      className={`on-pastel inline-block px-4 py-1.5 rounded-md font-hand text-xl md:text-2xl sticky-note text-ink ${className}`}
       style={{ backgroundColor: color, transform: `rotate(${rotate}deg)` }}
     >
       {children}
@@ -30,7 +30,7 @@ export function TagChip({
 }) {
   return (
     <span
-      className={`inline-block px-3 py-1 rounded-full text-xs md:text-sm font-medium tag-chip ${className}`}
+      className={`on-pastel inline-block px-3 py-1 rounded-full text-xs md:text-sm font-medium tag-chip text-ink ${className}`}
       style={{ backgroundColor: color }}
     >
       {children}

@@ -39,7 +39,7 @@ export default function Projects() {
         <div>
           <StickyLabel rotate={-3}>Featured Projects</StickyLabel>
           <ArrowDoodle className="w-8 h-10 mt-3 ml-12" />
-          <p className="mt-5 text-sm md:text-base text-ink/70 max-w-[180px]">
+          <p className="mt-5 text-sm md:text-base text-ink/70 dark:text-zinc-400 max-w-[180px]">
             Have designed more than 10 projects
           </p>
         </div>
@@ -48,9 +48,9 @@ export default function Projects() {
           {projects.map((p) => (
             <div
               key={p.title}
-              className="group rounded-xl border border-ink/70 bg-white overflow-hidden shadow-note transition-transform duration-200 hover:-translate-y-1"
+              className="group rounded-xl border border-ink/70 dark:border-zinc-700 bg-white dark:bg-zinc-900 overflow-hidden shadow-note transition-transform duration-200 hover:-translate-y-1"
             >
-              <div className="aspect-[4/3] border-b border-ink/40 overflow-hidden bg-[#f4f4f4]">
+              <div className="aspect-[4/3] border-b border-ink/40 dark:border-zinc-700 overflow-hidden bg-[#f4f4f4] dark:bg-zinc-800">
                 <img
                   src={p.cover}
                   alt={p.alt}
@@ -64,7 +64,7 @@ export default function Projects() {
                 </p>
                 <a
                   href="#contact"
-                  className="shrink-0 px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold tag-chip whitespace-nowrap transition-transform group-hover:scale-105"
+                  className="shrink-0 px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold tag-chip on-pastel text-ink whitespace-nowrap transition-transform group-hover:scale-105"
                   style={{ backgroundColor: p.buttonColor }}
                 >
                   {p.button}

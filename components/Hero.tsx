@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
 
         <div className="md:pt-8 animate-fadeUp" style={{ animationDelay: "0.15s" }}>
-          <p className="text-base md:text-lg leading-relaxed text-ink/80 max-w-md">
+          <p className="text-base md:text-lg leading-relaxed text-ink/80 dark:text-zinc-300 max-w-md">
             I help startups and businesses transform ideas into impactful
             digital products through product strategy, UI/UX design, and brand
             identity.
@@ -36,7 +36,7 @@ export default function Hero() {
 
           <a
             href="#contact"
-            className="inline-block mt-8 bg-ink text-white font-semibold px-7 py-3.5 rounded-md shadow-btn hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
+            className="inline-block mt-8 bg-ink text-white font-semibold px-7 py-3.5 rounded-md shadow-btn hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 dark:bg-white dark:text-ink"
           >
             Hire me
           </a>

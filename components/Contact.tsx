@@ -27,7 +27,7 @@ export default function Contact() {
           {fields.map((f) => (
             <label key={f.name} className="block">
               <span
-                className="inline-block px-2.5 py-0.5 rounded font-hand text-lg md:text-xl mb-2 -rotate-1 sticky-note"
+                className="inline-block px-2.5 py-0.5 rounded font-hand text-lg md:text-xl mb-2 -rotate-1 sticky-note on-pastel text-ink"
                 style={{ backgroundColor: f.color }}
               >
                 {f.label}
@@ -36,14 +36,14 @@ export default function Contact() {
                 type={f.type}
                 name={f.name}
                 placeholder={f.placeholder}
-                className="w-full bg-transparent border-b-2 border-ink/70 focus:border-ink outline-none pb-2 text-sm md:text-base placeholder:text-ink/30 transition-colors"
+                className="w-full bg-transparent border-b-2 border-ink/70 dark:border-zinc-500 focus:border-ink dark:focus:border-zinc-200 outline-none pb-2 text-sm md:text-base placeholder:text-ink/30 dark:placeholder:text-zinc-500 transition-colors"
               />
             </label>
           ))}
 
           <button
             type="submit"
-            className="self-start mt-2 bg-ink text-white font-semibold px-7 py-3.5 rounded-md shadow-btn hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
+            className="self-start mt-2 bg-ink text-white font-semibold px-7 py-3.5 rounded-md shadow-btn hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 dark:bg-white dark:text-ink"
           >
             Send Here
           </button>

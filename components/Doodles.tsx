@@ -5,7 +5,7 @@ export function ArrowDoodle({ className = "" }: { className?: string }) {
       src="/images/arrow.svg"
       alt=""
       aria-hidden="true"
-      className={`${className} object-contain`}
+      className={`${className} object-contain dark:invert`}
     />
   );
 }
