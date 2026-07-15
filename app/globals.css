@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.mark-highlight {
+  position: relative;
+  z-index: 0;
+  padding: 0 6px;
+}
+
+.mark-highlight::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  bottom: 2px;
+  top: 18%;
+  background: #ffc9f0;
+  z-index: -1;
+  transform: rotate(-1deg);
+  border-radius: 4px 8px 4px 8px;
+}
+
+.sticky-note {
+  box-shadow: 4px 6px 0 rgba(17, 17, 17, 0.08);
+}
+
+.tag-chip {
+  box-shadow: 2px 3px 0 rgba(17, 17, 17, 0.08);
+}
+
+.animate-fadeUp {
+  animation-fill-mode: both;
+}
+
+/* Scroll-reveal (driven by the Reveal component) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease-out, transform 0.65s ease-out;
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children inside a revealed block */
+.reveal .stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+}
+
+.reveal-visible .stagger > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-visible .stagger > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-visible .stagger > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal-visible .stagger > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal-visible .stagger > *:nth-child(4) { transition-delay: 0.35s; }
+
+/* Sticky-card wrapper keeps rotation separate so reveal transforms don't clash */
+.tilt-card {
+  transform: rotate(var(--rot, 0deg)) translateY(var(--off, 0px));
+  transition: transform 0.25s ease;
+}
+
+@media (max-width: 639px) {
+  .tilt-card {
+    --off: 0px;
+  }
+}
+
+.tilt-card:hover {
+  transform: rotate(0deg) translateY(calc(var(--off, 0px) - 4px));
+}
