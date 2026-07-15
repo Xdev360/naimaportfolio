@@ -26,3 +26,9 @@ next-env.d.ts
 
 # vercel
 .vercel
+
+# large source screen exports (optimized webp versions live in public/images/screens/)
+assets/GOOGLE movie screen/
+assets/IDEASHA Screens/
+assets/SMART Smb screens/
+assets/STAX (store book) Screens/

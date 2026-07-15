@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Logo } from "./Header";
 
 const socials = [
@@ -43,10 +44,10 @@ export default function Footer() {
     <footer className="max-w-content mx-auto px-6 md:px-10 pt-8 pb-12">
       <div className="border-t-2 border-ink dark:border-zinc-700 pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6 transition-colors duration-300">
         <div>
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
             <Logo />
             <span className="font-heading font-extrabold text-lg">Naimat</span>
-          </div>
+          </Link>
           <p className="text-sm text-ink/60 dark:text-zinc-400 mt-2">
             Product Designer · UI/UX Designer · Brand Designer
           </p>
